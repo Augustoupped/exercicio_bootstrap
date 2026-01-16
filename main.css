@@ -25,16 +25,16 @@
 
     .form-title {
         font-weight: 700;
-        color: #2052bed3;
+        color: #20be6cd3;
     }
 
     .form-subtitle {
-        color: #6c757d;
+        color: #01080e;
         margin-bottom: 1.5rem;
     }
 
     .input-group-text {
-        background-color: #e9f7ef;
+        background-color: #000000;
     }
 
 
@@ -60,7 +60,7 @@
         text-align: center;
         margin-top: 50px;
         font-size: 0.9rem;
-        color: #6c757d;
+        color: #000000;
     }
 
     /* Animações */
