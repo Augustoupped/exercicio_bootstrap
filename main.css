@@ -1,25 +1,98 @@
-body {
-    background-color: #f8f9fa;
-}
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f9fa;
+        overflow-x: hidden;
+    }
 
-.container {
-    margin-top: 50px;
-}
+    .container-form {
+        max-width: 1100px;
+        margin: 60px auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .form-box {
 
-h1 {
-    margin-bottom: 30px;
-}
+        flex: 1 1 450px;
+        background: linear-gradient(135deg, #ffffff, #f0fafd);
+        padding: 2rem;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
 
-.form-label {
-    font-weight: bold;
-}
+    .form-title {
+        font-weight: 700;
+        color: #0962bbd3;
+    }
 
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-}
+    .form-subtitle {
+        color: #6c757d;
+        margin-bottom: 1.5rem;
+    }
 
-.btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-}
+    .input-group-text {
+        background-color: #e9f7ef;
+    }
+
+
+    .btn-primary {
+        transition: all 0.3s ease-in-out;
+    }
+
+
+    .image-box {
+        flex: 1 1 450px;
+        animation: fadeLeft 0.6s ease-in-out forwards;
+        opacity: 0;
+    }
+
+    .image-box img {
+        width: 100%;
+        border-radius: 16px;
+        object-fit: cover;
+        max-height: 450px;
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 0.9rem;
+        color: #6c757d;
+    }
+
+    /* Animações */
+    .animated {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.6s ease-in-out;
+    }
+
+    .visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    @keyframes fadeLeft {
+        from {
+        opacity: 0;
+        transform: translateX(30px);
+        }
+
+        to {
+        opacity: 1;
+        transform: translateX(0);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .container-form {
+        flex-direction: column;
+        }
+
+        .image-box img {
+        max-height: 300px;
+        }
+    }
